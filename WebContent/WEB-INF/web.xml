@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>myBBS</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Enter</servlet-name>
+    <servlet-class>servlet.Enter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Enter</servlet-name>
+    <url-pattern>/servlet/Enter</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>FindControllerServlet</servlet-name>
+    <servlet-class>servlet.FindControllerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindControllerServlet</servlet-name>
+    <url-pattern>/servlet/FindControllerServlet</url-pattern>
+  </servlet-mapping>
+  
+ 
+</web-app>
