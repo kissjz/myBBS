@@ -15,7 +15,7 @@ public class NoteDao {
 	public Connection getConnection() throws Exception{
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection connection = 
-				(Connection) DriverManager.getConnection("jdbc:mysql://47.95.10.97:3306/forumdemo_notes", "root", "123Abc...");
+				(Connection) DriverManager.getConnection("jdbc:mysql://47.95.10.97:3306/forumdemo_notes", "root", "***");
 		
 		return connection;
 	}
